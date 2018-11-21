@@ -3,7 +3,8 @@
   "packages": [
     "examples/*",
     "packages/core",
-    "packages/plugins/*"
+    "packages/plugins/*",
+    "packages/plugins/angular/test/fixtures/app"
   ],
   "version": "0.0.7"
 }
