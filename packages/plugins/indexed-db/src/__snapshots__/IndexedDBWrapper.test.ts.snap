@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@gondel/plugin-indexed-db IndexedDBWrapper should create a connection 1`] = `
+IndexedDBWrapper {
+  "database": IDBDatabase {
+    "name": "testCase1",
+    "objectStoreNames": Array [
+      "testCase1",
+    ],
+    "version": 1,
+  },
+  "name": "testCase1",
+  "version": 1,
+}
+`;
+
+exports[`@gondel/plugin-indexed-db IndexedDBWrapper should create a connection 2`] = `
+IDBDatabase {
+  "name": "testCase1",
+  "objectStoreNames": Array [
+    "testCase1",
+  ],
+  "version": 1,
+}
+`;
+
+exports[`@gondel/plugin-indexed-db IndexedDBWrapper should set/get values from the DB 1`] = `
+IndexedDBWrapper {
+  "database": IDBDatabase {
+    "name": "testCase2",
+    "objectStoreNames": Array [
+      "testCase2",
+    ],
+    "version": 1,
+  },
+  "name": "testCase2",
+  "version": 1,
+}
+`;
+
+exports[`@gondel/plugin-indexed-db IndexedDBWrapper should set/get values from the DB 2`] = `
+IDBDatabase {
+  "name": "testCase2",
+  "objectStoreNames": Array [
+    "testCase2",
+  ],
+  "version": 1,
+}
+`;
