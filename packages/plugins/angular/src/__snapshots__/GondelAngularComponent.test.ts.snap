@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@gondel/plugin-angular should boot a single component without crashing 1`] = `
+DemoComponent {
+  "_componentName": "DemoComponent",
+  "_ctx": <div
+    data-g-name="DemoComponent"
+  >
+    <p>
+      Loading...
+    </p>
+  </div>,
+  "_namespace": "g",
+  "stop": [Function],
+}
+`;
