@@ -1,6 +1,6 @@
 {
   "name": "gondel",
-  "version": "0.0.3",
+  "version": "1.0.0-alpha.1",
   "private": true,
   "description": "Gondel Monorepo",
   "main": "index.js",
