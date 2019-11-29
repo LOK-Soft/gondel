@@ -135,14 +135,17 @@ export function getComponentByDomNodeAsync<T extends GondelComponent>(
  */
 export function findComponents<T extends GondelComponent>(
   domNode: ArrayLikeHtmlElement = document.documentElement!,
-  componentName?: string,
+  componentName?: string | string[],
   namespace: string = "g"
 ): Array<T> {
   const firstNode = getFirstDomNode(domNode);
   const components: Array<T> = [];
   const attribute = `_gondel_${namespace}`;
+  const componentNameArray = Array.isArray(componentName) ? componentName : [componentName];
   const nodes = firstNode.querySelectorAll(
-    `[data-${namespace}-name${componentName ? `="${componentName}"` : ""}]`
+    componentNameArray.reduce((a, c) => {
+      return c ? `${a?`${a},`:''}[data-${namespace}-name=${c}]` : a
+    }, "") || `[data-${namespace}-name]`
   );
   for (let i = 0; i < nodes.length; i++) {
     const node = nodes[i];
